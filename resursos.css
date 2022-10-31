@@ -1,0 +1,153 @@
+/* CONFIGURAÇÃO DO PRIMEIRO BLOCO */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* CONFIGURAÇÃO DO SEGUNDO BLOCO */
+#segundobloco {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+}
+
+#segundobloco-bloco1 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+}
+
+.segundobloco-bloco2 {
+    display: grid;
+    grid-template-columns: 125px auto;
+    gap: 25px;
+    align-items: center;
+}
+
+.segundobloco-bloco2 img {
+    width: 100%;
+}
+
+.segundobloco-bloco3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.segundobloco-bloco3 h2, .segundobloco-bloco3 p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* CONFIGURAÇÃO DO TERCEIRO BLOCO */
+#terceirobloco {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+}
+
+.terceirobloco-bloco1 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+
+    border: 1px solid #fcde67;
+    box-shadow: 5px 5px #fcde67;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.terceirobloco-bloco2 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 25px;
+}
+
+.terceirobloco-bloco2 img {
+    width: 100%;
+}
+
+.terceirobloco-bloco3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.terceirobloco-bloco3 h2, .terceirobloco-bloco3 h3, .terceirobloco-bloco3 p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* CONFIGURAÇÃO DA MOBILIDADE DA PAGINA MEDIA */
+@media screen and (max-width: 1000px) {
+    /* configuração do tamanho dos titulos/textos */
+    .tamanho-titulo-1 {
+        font-size: 2em;
+    }
+
+    .tamanho-titulo-2 {
+        font-size: 1.5em;
+    }
+
+    .tamanho-titulo-3 {
+        font-size: 1.2em;
+    }
+
+    .tamanho-texto-1 {
+        font-size: 1.2em;
+    }
+
+    .tamanho-texto-2 {
+        font-size: 1.875em;
+    }
+
+    /* CONFIGURAÇÃO DO TERCEIRO BLOCO */
+    .segundobloco-bloco2 {
+        grid-template-columns: 100px auto;
+    }
+}
+
+
+
+/* CONFIGURAÇÃO DA MOBILIDADE DA PAGINA PEQUENA */
+@media screen and (max-width: 600px) {
+    /* configuração do tamanho dos titulos/textos */
+    .tamanho-titulo-1 {
+        font-size: 1.5em;
+    }
+
+    .tamanho-titulo-2 {
+        font-size: 1.2em;
+    }
+
+    .tamanho-titulo-3 {
+        font-size: 1em;
+    }
+
+    .tamanho-texto-1 {
+        font-size: 1em;
+    }
+
+    .tamanho-texto-2 {
+        font-size: 1.5em;
+    }
+
+    /* CONFIGURAÇÃO DO TERCEIRO BLOCO */
+    .segundobloco-bloco2 {
+        grid-template-columns: 75px auto;
+    }
+}
