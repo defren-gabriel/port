@@ -8,6 +8,11 @@ nav {
     gap: 25px;
 }
 
+nav a {
+    border-radius: 10px;
+    padding: 25px;
+}
+
 
 
 /* CONFIGURAÇÃO DO SEGUNDO BLOCO */
