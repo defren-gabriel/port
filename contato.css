@@ -46,3 +46,19 @@ main {
 .detalhes {
     display: block;
 }
+
+
+/* para telas menores que 1000px*/
+@media screen and (max-width: 1000px){
+    main {
+        padding: 25px;
+    }
+}
+
+
+/* para telas menores que 750px*/
+@media screen and (max-width: 750px){
+    main {
+        padding: 10px;
+    }
+}
