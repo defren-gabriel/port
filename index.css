@@ -1,10 +1,30 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*
+* Realizado dia 16 de dezembro de 2022
+*
+*/
+
 /* CONFIGURAÇÃO DO PRIMEIRO BLOCO */
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 25px;
 }
 
@@ -17,9 +37,13 @@ nav a {
 
 /* CONFIGURAÇÃO DO SEGUNDO BLOCO */
 #segundobloco {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto 25px 40%;
     grid-template-columns: auto 40%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 25px;  
 }
 
@@ -35,23 +59,33 @@ nav a {
 
 /* CONFIGURAÇÃO DO TERCEIRO BLOCO */
 #terceirobloco {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto;
     grid-template-columns: auto;
     gap: 25px;
 }
 
 #terceirobloco-bloco1 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto;
     grid-template-columns: auto;
     gap: 25px;
 }
 
 .terceirobloco-bloco2 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 125px 25px auto;
     grid-template-columns: 125px auto;
     gap: 25px;
 
-    align-items: center;
+    -webkit-box-align: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
 }
 
 .terceirobloco-bloco2 img {
@@ -59,11 +93,21 @@ nav a {
 }
 
 .terceirobloco-bloco3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .terceirobloco-bloco3 h2, .terceirobloco-bloco3 p {
@@ -75,22 +119,39 @@ nav a {
 
 /* CONFIGURAÇÃO DO QUARTO BLOCO */
 #quartobloco {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto;
     grid-template-columns: auto;
     gap: 25px;
 }
 
 #quartobloco-bloco1 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto 25px auto 25px auto 25px auto;
     grid-template-columns: auto auto auto auto;
     gap: 25px;
 }
 
 .quartobloco-bloco2 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: auto;
     grid-template-columns: auto;
+    -ms-grid-rows: 145px 25px auto;
     grid-template-rows: 145px auto;
     gap: 25px;
+}
+
+.quartobloco-bloco2 > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+}
+
+.quartobloco-bloco2 > *:nth-child(2) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
 }
 
 .quartobloco-bloco2 img {
@@ -127,10 +188,18 @@ nav a {
 
     /* CONFIGURAÇÃO DO SEGUNDO BLOCO */
     #segundobloco {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
         gap: 25px;
     }
     
@@ -143,6 +212,7 @@ nav a {
 
     /* CONFIGURAÇÃO DO TERCEIRO BLOCO */
     .terceirobloco-bloco2 {
+        -ms-grid-columns: 100px auto;
         grid-template-columns: 100px auto;
     }
 
@@ -150,14 +220,28 @@ nav a {
 
     /* CONFIGURAÇÃO DO QUARTO BLOCO */
     #quartobloco-bloco1 {
+        -ms-grid-columns: auto auto;
         grid-template-columns: auto auto;
     }
 
     .quartobloco-bloco2 {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: auto;
         grid-template-columns: auto;
+        -ms-grid-rows: 115px 25px auto;
         grid-template-rows: 115px auto;
         gap: 25px;
+    }
+
+    .quartobloco-bloco2 > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .quartobloco-bloco2 > *:nth-child(2) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
     }
     
     .quartobloco-bloco2 img {
@@ -193,15 +277,27 @@ nav a {
 
     /* CONFIGURAÇÃO DO QUARTO BLOCO */
     .terceirobloco-bloco2 {
+        -ms-grid-columns: 75px auto;
         grid-template-columns: 75px auto;
     }
 
     /* CONFIGURAÇÃO DO QUARTO BLOCO */
     .quartobloco-bloco2 {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: auto;
         grid-template-columns: auto;
+        -ms-grid-rows: 86px 25px auto;
         grid-template-rows: 86px auto;
         gap: 25px;
+    }
+    .quartobloco-bloco2 > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+    .quartobloco-bloco2 > *:nth-child(2) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
     }
     
     .quartobloco-bloco2 img {
