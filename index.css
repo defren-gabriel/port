@@ -129,8 +129,8 @@ nav a {
 #quartobloco-bloco1 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto 25px auto 25px auto 25px auto;
-    grid-template-columns: auto auto auto auto;
+    -ms-grid-columns: auto 25px auto 25px auto 25px;
+    grid-template-columns: auto auto auto;
     gap: 25px;
 }
 
