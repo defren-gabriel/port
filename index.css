@@ -220,8 +220,8 @@ nav a {
 
     /* CONFIGURAÇÃO DO QUARTO BLOCO */
     #quartobloco-bloco1 {
-        -ms-grid-columns: auto auto;
-        grid-template-columns: auto auto;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .quartobloco-bloco2 {
@@ -282,6 +282,11 @@ nav a {
     }
 
     /* CONFIGURAÇÃO DO QUARTO BLOCO */
+    #quartobloco-bloco1 {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .quartobloco-bloco2 {
         display: -ms-grid;
         display: grid;
